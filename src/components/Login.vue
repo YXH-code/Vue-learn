@@ -1,11 +1,11 @@
 <template>
-  <div>
+  <el-card>
     user_name:<input type="text" v-model="loginForm.username"/>
     <br><br>
     password:<input type="password" v-model="loginForm.password"/>
     <br><br>
     <button @click="findUser">登录</button>
-  </div>
+  </el-card>
 </template>
 
 <script>

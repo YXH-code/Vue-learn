@@ -1,6 +1,6 @@
 <template>
   <div>
-    user_name:<input type="text" v-model="loginForm.user_name"/>
+    user_name:<input type="text" v-model="loginForm.username"/>
     <br><br>
     password:<input type="password" v-model="loginForm.password"/>
     <br><br>
@@ -14,7 +14,7 @@ export default {
   data () {
     return {
       loginForm: {
-        user_name: '',
+        username: '',
         password: ''
       },
       responseResult: []
@@ -23,8 +23,8 @@ export default {
   methods: {
     findUser: function () {
       this.$axios
-        .get('/login', {
-          user_name: this.loginForm.user_name,
+        .post('/login', {
+          username: this.loginForm.username,
           password: this.loginForm.password
         })
         .then(successResponse => {

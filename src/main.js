@@ -6,6 +6,12 @@ import router from './router'
 
 Vue.config.productionTip = false
 
+var axios = require('axios')
+axios.defaults.baseURL = 'http://localhost:8080/user'
+
+Vue.prototype.$axios = axios
+Vue.config.productionTip = false
+
 /* eslint-disable no-new */
 new Vue({
   el: '#app',

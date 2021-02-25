@@ -49,7 +49,7 @@ export default {
     return {
       books: [],
       currentPage: 1,
-      pagesize: 17
+      pagesize: 9
     }
   },
   mounted: function () {

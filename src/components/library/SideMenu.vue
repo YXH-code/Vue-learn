@@ -21,7 +21,7 @@
       <span slot="title">文化</span>
     </el-menu-item>
     <el-menu-item index="4">
-      <i class="el-icon-menu"></i>
+      <i class="el-icon-fork-spoon"></i>
       <span slot="title">生活</span>
     </el-menu-item>
     <el-menu-item index="5">

@@ -49,7 +49,7 @@ export default {
     return {
       books: [],
       currentPage: 1,
-      pagesize: 9
+      pagesize: 17
     }
   },
   mounted: function () {
@@ -110,7 +110,7 @@ export default {
         press: item.press,
         abs: item.abs,
         category: {
-          id: item.category.id.toString(),
+          id: item.category.id,
           name: item.category.name
         }
       }
